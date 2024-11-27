@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 export const Menu = () =>{
     return(
-        <StyledMenu>
-            <ul>          
+        <StyledMenu>            
+            <ul>         
                 <li>
                     <a href="">Kate Lepesevich</a>
                 </li>
