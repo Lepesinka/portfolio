@@ -6,13 +6,19 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper align={"center"} justify={"space-around"}>
+            <FlexWrapper align={"center"} justify={"space-around"} >
                 <div>
                     <MainTitle>Frontend Developer</MainTitle>
                     <Name>Hello,  my name is Kate Lepesevich</Name>
-                    <span>Short text with details about you, what you do or your professional career. You can add more information on the about page.</span>            
+                    <Text>Short text with details about you, what you do or your professional career. You can add more information on the about page.</Text> 
+                    <div>
+                        <Link href="#">Projects</Link>
+                        <Link href="#">LinkedLn</Link>
+                    </div>
+                             
                 </div>
                 <Photo src={photo} alt =""/>
+
             </FlexWrapper>
         </StyledMain>
     )
@@ -35,6 +41,12 @@ const Photo = styled.img`
 const MainTitle = styled.h1`
 `
 const Name = styled.h2`
+
+`
+const Text = styled.p`
+
+`
+const Link = styled.a`
 
 `
 export {}
