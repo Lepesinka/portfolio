@@ -1,24 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Menu = () =>{
+export const Menu = () => {
     return(
         <StyledMenu>            
             <ul>
                          
-                <li>
-                    <a href="">Kate Lepesevich</a>
-                </li>
+                <ListItem>
+                    <Link href="">Kate Lepesevich</Link>
+                </ListItem>
                 <div>
-                    <li>
-                        <a href="">About</a>
-                    </li>
-                    <li>
-                        <a href="">Projects</a>
-                    </li>
-                    <li>
-                        <a href="">Contacts</a>
-                    </li>
+                    <ListItem>
+                        <Link href="">About</Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="">Projects</Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="">Contacts</Link>
+                    </ListItem>
                 </div>
             </ul>
         </StyledMenu>
@@ -36,7 +36,16 @@ const StyledMenu = styled.nav`
             gap: 30px;
         }
     }
+`
+const ListItem = styled.li`
 
 
+`
+const Link = styled.a`
+font-family: 'Comfortaa', sans serif;
+font-weight: 700;
+font-size: 18px;
+text-align: left; 
+color: #25282B;
 
 `
