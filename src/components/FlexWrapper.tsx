@@ -15,7 +15,10 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     justify-content: ${props => props.justify || "flex-start"};
     align-items: ${props => props.align || "stretch"};
     flex-wrap: ${props => props.wrap || "nowrap"};
-    gap: ${props=> props.gap || "initial"
+    gap: ${props=> props.gap || "initial"};
+    height: 100%;
+
+    //размер по контенту, в частности высота, чтобы он занимал 100 процентов от родителя    
     }
    
 

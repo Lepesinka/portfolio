@@ -3,8 +3,5 @@ export const theme = {
         primaryBg: "#F9FAFF",
         accent: "#FDC435",
         font: "#25282B"
-
-
-
     }
 }

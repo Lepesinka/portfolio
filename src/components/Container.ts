@@ -1,7 +1,13 @@
 import styled from "styled-components";
 
-export const Container = styled.div `
+type ContainerPropsType = {
+    position?: string
+   
+   
+}
 
+export const Container  = styled.div<ContainerPropsType>`
+    position: ${props => props.position || "static"};
     max-width: 1230px;
     width: 100%;
     min-height: 100%;
