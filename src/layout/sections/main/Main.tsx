@@ -2,17 +2,15 @@ import React from "react";
 import photo from '../../../assets/images/photo.png'
 import bg from '../../../assets/images/yellow-bg.png'
 import styled from "styled-components";
-import image_bcg_yellow from  '../../../assets/images/image-bcg-yellow.png'
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
-
-
+import { Link } from "../../../components/Link";
 
 export const Main = () => {
     return (
         <StyledMain>
-            <Container position="relative">
+            <Container>
             <FlexWrapper align={"center"} justify={"space-between"} >
                 <div style={{position: "relative"}}>
                     <MainTitle>Frontend Developer</MainTitle>
@@ -34,14 +32,10 @@ export const Main = () => {
                     </defs> 
                 </svg> 
                 <KlyaksaBackground>
-                    <Photo src={photo} alt='#'/>
-                    
+                    <Photo src={photo} alt='#'/>                    
                 </KlyaksaBackground> 
             </KlyaksaContainer>
-                {/* <Photo src={photo} alt =""/>  */}
-                        
-            </FlexWrapper>
-            {/* <PhotoBg src={bg} alt =""/> */}
+            </FlexWrapper>          
             </Container>
         </StyledMain>
     )
@@ -53,19 +47,8 @@ const StyledMain = styled.section`
     display:flex; //чтобы появилось свободное пространство по вертикали, чтобы двигать наши элементы    
     padding-top: 20px;    
     align-items: flex-start;
-
-
-
 `
 
-/* const Photo = styled.img`
-    width: 720px;
-    height: 629px;
-    object-fit: cover;
-    position: relative;
-    z-index: 1;
-
-` */
 export const PhotoBg = styled.img`
     width: 720px;
     height: 629px;
@@ -77,16 +60,6 @@ export const PhotoBg = styled.img`
 
  
 `
-
-/* const BgPhoto = styled.img`
-
-    width: 777px;
-    height: 877px;
-    position: absolute;
-    top: 0;
-    right: 0;
-` */
-
 const MainTitle = styled.h1`
     line-height: 27px;
     color: ${theme.colors.accent};
@@ -96,6 +69,7 @@ const MainTitle = styled.h1`
 `
 const Name = styled.h2`
     font-family: 'Roboto', sans-serif;
+    color: ${theme.colors.fontName};
     font-weight: 700;
     font-size: 64px;
     letter-spacing: 0%;
@@ -104,14 +78,13 @@ const Name = styled.h2`
 
 `
 const Text = styled.p`
-
+    color: ${theme.colors.fontText};
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
+    margin-bottom: 40px;
 `
-const Link = styled.a`
 
-`
 const Photo = styled.img`
     width: 720px;
     height: 629px;
@@ -126,6 +99,7 @@ const KlyaksaContainer = styled.div `
     height: 650px; /* Задайте высоту вашего контейнера */  
     position: relative;    
     top: -55px;
+    right: -7%;
 
 `
 const KlyaksaBackground = styled.div `

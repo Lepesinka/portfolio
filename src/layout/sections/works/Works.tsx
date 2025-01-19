@@ -30,7 +30,7 @@ export const Works =()=>{
 
 const StyledWorks = styled.section `
 
-min-height: 100vh;
+    border-radius: 24px;
 
 
 

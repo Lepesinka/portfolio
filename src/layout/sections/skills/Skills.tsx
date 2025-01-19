@@ -1,17 +1,16 @@
 import React from "react";
 import styled from 'styled-components';
 import { FlexWrapper } from "../../../components/FlexWrapper";
-import { Icon } from "../../../components/icon/Icon";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Skill } from "./skill/Skill";
-
-
+import { Container } from "../../../components/Container";
 
 export const Skills = () => {
     return (
         <StyledSkills>
+            <Container>
             <SectionTitle>Skills</SectionTitle>
-            <FlexWrapper wrap={"wrap"} justify={"center"}>
+            <FlexWrapper wrap={"wrap"} justify={"center"} gap={"96px"}>
                 <Skill iconId={"vscode"}/> 
                 <Skill iconId={"js"}/> 
                 <Skill iconId={"css"}/>
@@ -25,16 +24,12 @@ export const Skills = () => {
                 <Skill iconId={"bootstrap"}/>
                 <Skill iconId={"tailwind"}/> 
             </FlexWrapper>
-
+            </Container>
         </StyledSkills>        
     )
 }
 
 const StyledSkills = styled.section `
-
-
-min-height: 40vh;
-
 
 `
 export {}

@@ -13,7 +13,9 @@ export const Skill = (props:SkillPropsType) => {
     return (
        
             <StyledSkill>
-                <Icon iconId={props.iconId} />
+                <FlexWrapper >
+                    <Icon iconId={props.iconId} />
+                </FlexWrapper>
             </StyledSkill>
         
     )
@@ -21,9 +23,11 @@ export const Skill = (props:SkillPropsType) => {
 
 const StyledSkill = styled.div`
     
-    width: 14%;
-    background-color: rgba(255, 255, 255, 0.56);
-    margin: 10px;
+    width: 112px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-button: 18px;
+    padding-right: 100px;
     
 
 

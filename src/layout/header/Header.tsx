@@ -23,9 +23,10 @@ export const Header = ()=>{
 const StyledHeader = styled.header`
 
     background: transparent;
-    padding: 20px 0;
+    padding: 20px;
+
     // Header тянется на всю ширину , прижимае мего по бокам и верхнему краю и фиксируем ,чтобы был всегда вверху экрана
-    position: fixed;
+    position: fixed;   
     top: 0; 
     left: 0; 
     right: 0;

@@ -24,6 +24,8 @@ body {
 
 a {
  text-decoration: none;
+ color:${theme.colors.font}
+
 }
 
 ul {
@@ -37,6 +39,7 @@ button {
 
 section {
     background-color: ${theme.colors.primaryBg} ;
+    padding: 150px 0;
 }
 
 `

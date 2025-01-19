@@ -31,9 +31,12 @@ export const Work = (props: WorkPropsType) => {
 
 const StyledWork = styled.div`
     display:flex;
-    background-color: #ffe869;
+//    background-color: #ffe869;
+    /* bg / white */
+    background: rgb(255, 255, 255);
     max-width: 992px;
     width:100%;
+    border-radius: 24px;
 `
 const Title = styled.h3`
 
@@ -50,9 +53,10 @@ const Link= styled.a`
 `
 
 const Image = styled.img`
- height: 524px;
-object-fit: cover;
-flex:1;
+    height: 524px;
+    object-fit: cover;
+    flex:1;
+    border-radius: 24px;
 `
 
 export {}
