@@ -18,7 +18,9 @@ export const Works =()=>{
                       src={projectOne}/>
                 <Work title={"Project Name"}
                       text={"What was your role, your deliverables, if the project was personal, freelancing."}
-                      src={projectTwo}/>
+                      src={projectTwo}
+                      left={true}
+                      />
                 <Work title={"Project Name"}
                       text={"You can also add in this description the type of the project, if it was for web, mobile, electron."}
                       src={projectThree}/>
@@ -30,7 +32,7 @@ export const Works =()=>{
 
 const StyledWorks = styled.section `
 
-    border-radius: 24px;
+    
 
 
 
