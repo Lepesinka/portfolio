@@ -30,7 +30,7 @@ export const Main = () => {
                             
                         </clipPath> 
                     </defs> 
-                </svg> 
+                </svg>  
                 <KlyaksaBackground>
                     <Photo src={photo} alt='#'/>                    
                 </KlyaksaBackground> 

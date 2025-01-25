@@ -19,12 +19,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: ${theme.colors.font};
   line-height: 1.2;
+  background-color: ${theme.colors.primaryBg} ;
 
 }
 
 a {
  text-decoration: none;
- color:${theme.colors.font}
+ color:${theme.colors.font};
+ cursor: pointer;
 
 }
 
