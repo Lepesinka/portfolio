@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../../styles/Theme";
+import { theme } from "../../../styles/Theme";
 
-export const Menu = () => {
+export const HeaderMenu = () => {
     return(
         <StyledMenu>            
             <ul>
@@ -35,7 +35,7 @@ const StyledMenu = styled.nav`
         width: 100%;
         div {
             display: flex;
-            gap: 30px;
+            gap: 48px;
         }
     }
         @media ${theme.media.tablet} {
@@ -58,3 +58,4 @@ text-align: left;
 color: #25282B;
 
 `
+export {}

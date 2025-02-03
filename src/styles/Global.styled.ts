@@ -40,7 +40,7 @@ button {
 }
 
 section {
-    background-color: ${theme.colors.primaryBg} ;
+    //background-color: ${theme.colors.primaryBg} ;
     padding: 150px 0;
 }
 
