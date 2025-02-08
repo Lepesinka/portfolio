@@ -5,26 +5,25 @@ import { css } from "styled-components";
 export const MobileMenu = () => {
     return(
         <StyledMobileMenu>   
-            <BurgerButton isOpen={true}>
+            <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>  
-            <MobileMenuPopup isOpen={true}>
+            <MobileMenuPopup isOpen={false}>
             <ul>
                          
-                         <ListItem>
+                        <ListItem>
                              <Link href="">Kate Lepesevich</Link>
-                         </ListItem>
-                         <div>
-                             <ListItem>
-                                 <Link href="">About</Link>
-                             </ListItem>
-                             <ListItem>
-                                 <Link href="">Projects</Link>
-                             </ListItem>
-                             <ListItem>
-                                 <Link href="">Contacts</Link>
-                             </ListItem>
-                         </div>
+                         </ListItem>                         
+                         <ListItem>
+                            <Link href="">About</Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="">Projects</Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="">Contacts</Link>
+                        </ListItem>
+                         
                      </ul>
             </MobileMenuPopup>     
 
@@ -49,7 +48,8 @@ const  MobileMenuPopup = styled.div<{isOpen: boolean}>`
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 9999;
+    z-index: 99999;
+    background-color: rgba(245, 245, 245, 0.9);
     display: none;
  
 
@@ -60,13 +60,9 @@ const  MobileMenuPopup = styled.div<{isOpen: boolean}>`
     
     `}
     ul {
-        display:flex;        
-        justify-content: space-between;
-        width: 100%;
-        div {
-            display: flex;
-            gap: 48px;
-        }
+        display:flex;
+        gap: 48px;        
+        justify-content: center;
         align-items: center;
         flex-direction: column;
     }
@@ -140,7 +136,7 @@ const ListItem = styled.li`
 const Link = styled.a`
 font-family: 'Comfortaa', sans serif;
 font-weight: 700;
-font-size: 18px;
+font-size: 30px;
 text-align: left; 
 color: #25282B;
 
