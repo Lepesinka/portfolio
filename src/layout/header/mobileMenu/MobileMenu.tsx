@@ -7,7 +7,6 @@ export const MobileMenu = () => {
         <StyledMobileMenu>   
             <BurgerButton isOpen={true}>
                 <span></span>
-
             </BurgerButton>  
             <MobileMenuPopup isOpen={true}>
             <ul>
@@ -52,19 +51,14 @@ const  MobileMenuPopup = styled.div<{isOpen: boolean}>`
     bottom: 0;
     z-index: 9999;
     display: none;
+ 
 
     ${props => props.isOpen && css <{isOpen: boolean}>`
         display: flex;
         justify-content: center;
-        align-items: center;
-
-
-    
+        align-items: center;   
     
     `}
-
-
-
     ul {
         display:flex;        
         justify-content: space-between;
@@ -80,11 +74,11 @@ const  MobileMenuPopup = styled.div<{isOpen: boolean}>`
 `
 const BurgerButton = styled.button<{isOpen: boolean}>`
     position: fixed;
-    top: -100px;
-    right: -100px;
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     z-index: 9999999;
+    border: 1px solid red;
+    left: 88%;
 
     span {
         display: block;
@@ -97,7 +91,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
 
         ${props => props.isOpen && css <{isOpen: boolean}>`
 
-        color: rgba(255, 255, 255, 0);
+        background-color: rgba(255, 255, 255, 0);
         
         
         `}
@@ -114,7 +108,9 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             ${props => props.isOpen && css <{isOpen: boolean}>`
 
                transform: rotate(-45deg) translateY(0);
-        `}  
+            
+        `}
+        }  
         
         &::after {
             content: "";
@@ -127,9 +123,10 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
 
             ${props => props.isOpen && css <{isOpen: boolean}>`
 
-               transform: rotate(-45deg) translateY(0);
+               transform: rotate(45deg) translateY(0);
                width:18px;
-        `}     
+        `}  
+}   
 
     
     }
