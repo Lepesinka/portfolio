@@ -9,8 +9,10 @@ export const SectionTitle = styled.h2 `
     line-height: 72px;
     letter-spacing: 0%;
     text-align: center;
-    margin-bottom: 85px;
-
+    margin-bottom: 80px;
+    @media ${theme.media.mobile} {
+        margin-bottom: 50px;   
+     }
     position: relative;
 
     &::before {

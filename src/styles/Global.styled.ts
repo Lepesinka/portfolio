@@ -41,7 +41,12 @@ button {
 
 section {
     //background-color: ${theme.colors.primaryBg} ;
-    padding: 150px 0;
+    padding: 140px 0;
+
+    @media ${theme.media.mobile} {
+
+      padding: 80px 0;
+    }
 }
 
 `

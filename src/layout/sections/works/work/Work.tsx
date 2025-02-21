@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import { FlexWrapper } from '../../../../components/FlexWrapper';
+import { theme } from '../../../../styles/Theme';
 
 type WorkPropsType = {
     title: string
@@ -35,11 +36,22 @@ export const Work = ({left = false, src, title, text}: WorkPropsType) => {
 const StyledWork = styled.div`
     display:flex;
     background: rgb(255, 255, 255);
+    //делает элементы резиновыми
     max-width: 992px;
-    width:100%;
+    //width:100%;
+
+    flex-grow: 1;
+s
     border-radius: 24px;
     overflow: hidden;
     
+     @media ${theme.media.mobile} {
+           &:nth-child(odd) {
+            flex-direction: column-reverse; 
+           }
+            max-width: 345px;
+            flex-direction: column;  
+         }
     
 `
 const Title = styled.h3`

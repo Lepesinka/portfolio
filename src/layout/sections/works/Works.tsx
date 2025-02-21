@@ -12,7 +12,7 @@ export const Works =()=>{
     return(
         <StyledWorks>
             <SectionTitle>Projects</SectionTitle>  
-            <FlexWrapper direction={"column"} align="center" gap='50px'>
+            <FlexWrapper direction={"column"} align={"center"} gap={'50px'} wrap={"wrap"}>
                 <Work title={"Project Name"}
                       text={"I created this personal project in order to show how to create an interface in Figma using a portfolio as an example."}
                       src={projectOne}/>
