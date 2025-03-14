@@ -5,12 +5,11 @@ import { theme } from "../../../styles/Theme";
 export const HeaderMenu = () => {
     return(
         <StyledMenu>            
-            <ul>
-                         
+            <ul>                         
                 <ListItem>
                     <Link href="">Kate Lepesevich</Link>
                 </ListItem>
-                <div>
+                <StyledMenuNone>
                     <ListItem>
                         <Link href="">About</Link>
                     </ListItem>
@@ -20,7 +19,7 @@ export const HeaderMenu = () => {
                     <ListItem>
                         <Link href="">Contacts</Link>
                     </ListItem>
-                </div>
+                </StyledMenuNone>
             </ul>
         </StyledMenu>
     )
@@ -33,17 +32,21 @@ const StyledMenu = styled.nav`
         display:flex;        
         justify-content: space-between;
         width: 100%;
-        div {
-            display: flex;
-            gap: 48px;
-        }
+
     }
-        @media ${theme.media.tablet} {
-            display: none;
-        
-        
-        }
+
     
+
+`
+const StyledMenuNone = styled.div`
+        display: flex;
+        gap: 48px;
+     @media ${theme.media.tablet} {
+           
+    display: none;
+               
+        }
+
 
 `
 const ListItem = styled.li`

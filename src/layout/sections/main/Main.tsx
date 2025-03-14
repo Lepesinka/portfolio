@@ -57,11 +57,11 @@ const StyledMain = styled.section`
     display:flex; //чтобы появилось свободное пространство по вертикали, чтобы двигать наши элементы    
     padding-top: 20px;    
     align-items: flex-start;
-
+ 
     ${FlexWrapper} {
      @media ${theme.media.tablet} {
         flex-direction: column-reverse;   
-     }
+     } 
     } 
 `
 
@@ -116,7 +116,7 @@ const Photo = styled.img`
     @media ${theme.media.mobile} {
         width: auto;
         height: auto;
-        top: 153px;
+        top: 155px;
         right: 15px;
     }
 
@@ -127,7 +127,7 @@ const KlyaksaContainer = styled.div `
     height: 650px; /* Задайте высоту вашего контейнера */  
     position: relative;    
     top: -55px;
-    right: -7%;
+   // right: -7%;
 
      @media ${theme.media.mobile} {
         width: 100%;
